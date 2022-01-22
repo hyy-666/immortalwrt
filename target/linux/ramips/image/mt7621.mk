@@ -574,6 +574,15 @@ define Device/mqmaker_witi
 endef
 TARGET_DEVICES += mqmaker_witi
 
+define Device/motorola_mr2600
+  BLOCKSIZE := 64k
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Motorola
+  DEVICE_MODEL := MR2600
+  DEVICE_PACKAGES := kmod-mt7615e wpad-openssl
+endef
+TARGET_DEVICES += motorola_mr2600
+
 define Device/mtc_wr1201
   IMAGE_SIZE := 16000k
   DEVICE_VENDOR := MTC
