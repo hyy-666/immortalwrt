@@ -26,27 +26,27 @@
 		compatible = "gpio-leds";
 
 		led_power_orange: power_orange {
-			label = "dir-878-a1:orange:power";
+			label = "motorola-mr2600:orange:power";
 			gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 		};
 
 		led_power_green: power_green {
-			label = "dir-878-a1:green:power";
+			label = "motorola-mr2600:green:power";
 			gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
 		};
 
 		led_net_orange: net_orange {
-			label = "dir-878-a1:orange:net";
+			label = "motorola-mr2600:orange:net";
 			gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
 		};
 
 		led_net_green {
-			label = "dir-878-a1:green:net";
+			label = "motorola-mr2600:green:net";
 			gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
 		};
 
 		usb3 {
-		label = "dir-878-a1:green:usb3";
+		label = "motorola-mr2600:green:usb3";
 		gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
 		trigger-sources = <&xhci_ehci_port1>;
 		linux,default-trigger = "usbport";
