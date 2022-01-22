@@ -46,10 +46,10 @@
 		};
 
 		usb3 {
-		label = "motorola-mr2600:green:usb3";
-		gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
-		trigger-sources = <&xhci_ehci_port1>;
-		linux,default-trigger = "usbport";
+			label = "motorola-mr2600:green:usb3";
+			gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+			trigger-sources = <&xhci_ehci_port1>;
+			linux,default-trigger = "usbport";
 		};
 	};
 
